@@ -22,7 +22,7 @@ with st.form("chat_input", clear_on_submit=True):
     for msg in st.session_state["messages"]:  # Added missing square brackets for accessing the "messages" key
         message(msg["content"], is_user=msg["role"] == "user")  # display message on the screen
 
-palm_api_key = "AIzaSyDwD_q8PzxhzYejK2LHbS8_IGOkOyj8iwM"
+palm_api_key = ""
 
 if user_prompt and palm_api_key:
 
